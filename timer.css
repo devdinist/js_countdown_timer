@@ -1,0 +1,56 @@
+@font-face{
+    font-family: 'Nanum Gothic';
+    src: url(./Nanum_Gothic/NanumGothic-Bold.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+div.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/30/13/29/space-4984262_960_720.jpg);
+    background-size: cover;
+}
+
+div.timer_side div.ment {
+    text-align: center;
+}
+
+div.timer_side div.ment span{
+    font-size: 4.5em;
+    color: white;
+    font-weight: bold;
+}
+
+div.timer_side div.time ul li{
+    float: left;
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+}
+div.timer_side div.time ul li:first-child{
+    width: 200px;
+}
+
+/* div.timer_side div.time ul li div{width: 150px; text-align: center;} */
+div.timer_side div.time ul li span.day{color: red;}
+div.timer_side div.time ul li.hour span.hour{color: orange;}
+div.timer_side div.time ul li.minute span.minute{color: aqua;}
+div.timer_side div.time ul li.seconds span.seconds{color: gold;}
+
+div.timer_side div.time ul li.hour{width: 150px;}
+div.timer_side div.time ul li.minute{width: 120px;}
+div.timer_side div.time ul li.seconds{width: 110px;}
+div.timer_side div.time ul li.remain{margin-left: 15px;}
